@@ -1,0 +1,7 @@
+#Sat Mar 25 23:02:33 PDT 2017
+base.0=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_731b3b6a59ead3af3a71da9576951320510e5431
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_065c23228ba34c900e16ff07c454e0101ad1b1a8/classes.dex
+base.1=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_065c23228ba34c900e16ff07c454e0101ad1b1a8
+file.0=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_731b3b6a59ead3af3a71da9576951320510e5431/classes.dex

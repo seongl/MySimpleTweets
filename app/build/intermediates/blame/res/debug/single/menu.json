@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/menu/login.xml",
+        "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/src/main/res/menu/login.xml"
+    },
+    {
+        "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/menu/menu_timeline.xml",
+        "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/src/main/res/menu/menu_timeline.xml"
+    }
+]
