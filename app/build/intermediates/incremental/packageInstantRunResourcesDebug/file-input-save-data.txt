@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Mar 26 20:26:59 PDT 2017
+#Sun Mar 26 20:49:59 PDT 2017
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/resources-debug.ap_/res/layout/support_simple_spinner_dropdown_item.xml

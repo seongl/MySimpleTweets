@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Mar 26 20:27:22 PDT 2017
+#Sun Mar 26 20:50:18 PDT 2017
 210.set=DEX
 282.file=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_btn_colored_borderless_text_material.xml
 14.set=ANDROID_RESOURCE
