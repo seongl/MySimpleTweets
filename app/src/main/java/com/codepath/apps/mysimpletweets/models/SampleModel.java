@@ -66,13 +66,11 @@ public class SampleModel extends BaseModel {
 	// Record Finders
 	public static SampleModel byId(long id) {
 		System.out.println("AAA");
-		return null;
-//		return new Select().from(SampleModel.class).where(SampleModel.id.eq(id)).querySingle();
+		return new Select().from(SampleModel.class).where(SampleModel_Table.id.eq(id)).querySingle();
 	}
 
 	public static List<SampleModel> recentItems() {
 		System.out.println("BBB");
-		return null;
-//		return new Select().from(SampleModel.class).orderBy(SampleModel_Table.id, false).limit(300).queryList();
+		return new Select().from(SampleModel.class).orderBy(SampleModel_Table.id, false).limit(300).queryList();
 	}
 }

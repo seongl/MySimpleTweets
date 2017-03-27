@@ -72,6 +72,7 @@ public class Tweet {
             try {
                 JSONObject tweetJson = jsonArray.getJSONObject(i);
                 Tweet tweet = Tweet.fromJSON(tweetJson);
+                System.out.println("Tweet=" + tweet.getUid() + " " + tweet.getBody());
                 if( tweet != null) {
                     tweets.add(tweet);
                 }

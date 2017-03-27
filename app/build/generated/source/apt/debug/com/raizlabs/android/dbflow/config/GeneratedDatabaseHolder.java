@@ -18,13 +18,13 @@ import java.util.UUID;
 public final class GeneratedDatabaseHolder extends DatabaseHolder {
   public GeneratedDatabaseHolder() {
     typeConverters.put(Boolean.class, new BooleanConverter());
-    typeConverters.put(Calendar.class, new CalendarConverter());
-    typeConverters.put(GregorianCalendar.class, new CalendarConverter());
+    typeConverters.put(UUID.class, new UUIDConverter());
+    typeConverters.put(BigDecimal.class, new BigDecimalConverter());
     typeConverters.put(Date.class, new SqlDateConverter());
     typeConverters.put(Time.class, new SqlDateConverter());
     typeConverters.put(Timestamp.class, new SqlDateConverter());
-    typeConverters.put(UUID.class, new UUIDConverter());
-    typeConverters.put(BigDecimal.class, new BigDecimalConverter());
+    typeConverters.put(Calendar.class, new CalendarConverter());
+    typeConverters.put(GregorianCalendar.class, new CalendarConverter());
     typeConverters.put(java.util.Date.class, new DateConverter());
     new MyDatabaseRestClientDatabase_Database(this);
   }

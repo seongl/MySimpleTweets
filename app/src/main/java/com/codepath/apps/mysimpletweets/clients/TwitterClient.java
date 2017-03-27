@@ -1,4 +1,4 @@
-package com.codepath.apps.mysimpletweets;
+package com.codepath.apps.mysimpletweets.clients;
 
 import org.scribe.builder.api.Api;
 import org.scribe.builder.api.FlickrApi;
@@ -25,50 +25,49 @@ import com.loopj.android.http.RequestParams;
 public class TwitterClient extends OAuthBaseClient {
 	public static final Class<? extends Api> REST_API_CLASS = TwitterApi.class; // Change this
 	public static final String REST_URL = "https://api.twitter.com/1.1/"; // Change this, base API URL
-	public static final String REST_CONSUMER_KEY = "MrHapOXPwlcvMJk0LO5wEMe5W";       // Change this
-	public static final String REST_CONSUMER_SECRET = "l36iMyWPWRJO7a5txWgI7c5fj2giuoypflQg44GQs7Fk5hHXH4"; // Change this
-	public static final String REST_CALLBACK_URL = "oauth://cpsimpletweets"; // Change this (here and in manifest)
+	public static final String REST_CONSUMER_KEY = "fLpayTHPU5nxxk7EEt6gyDe0b";       // Change this
+	public static final String REST_CONSUMER_SECRET = "vBFulawXE8fgoMd0ftqlSxlvHtREO5sUsfEnDlQmPlBp87TBG6"; // Change this
+	public static final String REST_CALLBACK_URL = "oauth://cpsimpletweets111"; // Change this (here and in manifest)
 
 	public TwitterClient(Context context) {
 		super(context, REST_API_CLASS, REST_URL, REST_CONSUMER_KEY, REST_CONSUMER_SECRET, REST_CALLBACK_URL);
 	}
 
-	// CHANGE THIS
-	// DEFINE METHODS for different API endpoints here
-//	public void getInterestingnessList(AsyncHttpResponseHandler handler) {
-//		String apiUrl = getApiUrl("?nojsoncallback=1&method=flickr.interestingness.getList");
-//		// Can specify query string params directly or through RequestParams.
-//		RequestParams params = new RequestParams();
-//		params.put("format", "json");
-//		client.get(apiUrl, params, handler);
-//	}
+	public void getHomeTimeline(AsyncHttpResponseHandler handler) {
+		String apiUrl = getApiUrl("statuses/home_timeline.json");
+		// Specify the params
+		RequestParams params = new RequestParams();
+		params.put("count", 10);
+		params.put("since_id", 1);
+		// Execute the request
+		getClient().get(apiUrl, params, handler);
 
-	// METHOD == ENDPOINT gets us the home timeline
-
-
-
-
+	}
 
 
 	// HomeTimeline - Gets us the home timeline
 	// GET statuses/home_timeline.json
 	//    count=25
 	//    since_id=1
-	public void getHomeTimeline(AsyncHttpResponseHandler handler) {
+	public void getHomeTimeline(long maxId, AsyncHttpResponseHandler handler) {
 		String apiUrl = getApiUrl("statuses/home_timeline.json");
 		// Specify the params
 		RequestParams params = new RequestParams();
-		params.put("count", 25);
-		params.put("since+id", 1);
-		// Execute the request
+		if(maxId != 0) {
+			params.put("count", 10);
+			params.put("max_id", maxId-1);
+		}
+
 		getClient().get(apiUrl, params, handler);
 	}
 
 	// COMPOSE TWEET
-
-
-
-
+	public void post(String status, AsyncHttpResponseHandler handler) {
+		String apiUrl = getApiUrl("statuses/update.json");
+		RequestParams params = new RequestParams();
+		params.put("status", status);
+		client.post(apiUrl, params, handler);
+	}
 
 	/* 1. Define the endpoint URL with getApiUrl and pass a relative path to the endpoint
 	 * 	  i.e getApiUrl("statuses/home_timeline.json");

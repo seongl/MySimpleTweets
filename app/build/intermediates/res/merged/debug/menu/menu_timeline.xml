@@ -1,5 +1,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
-
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.codepath.apps.mysimpletweets.activities.TimelineActivity">
+    <item
+        android:id="@+id/create"
+        android:orderInCategory="101"
+        android:icon="@drawable/ic_create_black"
+        android:title="Create"
+        app:showAsAction="always" />
 </menu>
