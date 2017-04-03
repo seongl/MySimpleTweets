@@ -1,7 +1,6 @@
 package com.codepath.apps.mysimpletweets.adapters;
 
 import android.content.Context;
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -29,6 +28,13 @@ import static com.codepath.apps.mysimpletweets.R.id.tvUserName;
  */
 
 public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
+
+    private View.OnClickListener listener;
+
+    public void setListener(View.OnClickListener listener) {
+        this.listener = listener;
+    }
+
     public TweetsArrayAdapter(Context context, List<Tweet> tweets) {
         super(context, 0, tweets);
     }
@@ -36,7 +42,8 @@ public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
     @NonNull
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        Tweet tweet = getItem(position);
+
+        final Tweet tweet = getItem(position);
         ViewHolderTweet viewHolder;
 
         if( convertView == null) {
@@ -59,6 +66,15 @@ public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
         viewHolder.tvBody.setText(tweet.getBody());
 
         viewHolder.ivProfileImage.setImageResource(android.R.color.transparent);
+
+        final View convertViewFinal = convertView;
+
+        viewHolder.ivProfileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                listener.onClick(convertViewFinal);
+            }
+        });
 
         SimpleDateFormat parseFormat =
                 new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy");
@@ -94,6 +110,7 @@ public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
 
         return convertView;
     }
+
     static class ViewHolderTweet {
         ImageView ivProfileImage;
         TextView tvUserName;
@@ -101,5 +118,4 @@ public class TweetsArrayAdapter extends ArrayAdapter<Tweet> {
         TextView tvRelativeTime;
         TextView tvName;
     }
-
 }

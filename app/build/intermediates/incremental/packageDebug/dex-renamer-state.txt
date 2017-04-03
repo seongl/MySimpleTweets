@@ -1,4 +1,4 @@
-#Sun Apr 02 21:55:24 PDT 2017
+#Mon Apr 03 15:46:48 PDT 2017
 base.0=/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_731b3b6a59ead3af3a71da9576951320510e5431
 renamed.1=classes.dex
 renamed.0=classes2.dex

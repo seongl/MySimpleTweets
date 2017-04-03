@@ -5,32 +5,33 @@
     density="hdpi"
     format="8"
     plugin-version="2.2.3"
-    timestamp="10902615759438"
+    timestamp="17592535951562"
     token="-4891409186764549873"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="471" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="150" />
     <task
         name="verifier"
-        duration="0" />
+        duration="28" />
+
+    <artifact
+        location="/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="10294868508052"
+        timestamp="17592535951562"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="10902615759438"
-        verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

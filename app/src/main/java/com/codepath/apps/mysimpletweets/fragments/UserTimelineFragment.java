@@ -16,8 +16,6 @@ import java.util.ArrayList;
 
 import cz.msebera.android.httpclient.Header;
 
-import static java.util.Collections.addAll;
-
 /**
  * Created by seonglee on 4/2/17.
  */
