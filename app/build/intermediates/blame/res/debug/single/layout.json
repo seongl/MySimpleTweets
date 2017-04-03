@@ -92,6 +92,10 @@
         "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/exploded-aar/com.android.support/design/25.2.0/res/layout/design_bottom_sheet_dialog.xml"
     },
     {
+        "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/activity_profile.xml",
+        "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/src/main/res/layout/activity_profile.xml"
+    },
+    {
         "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
         "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout/abc_activity_chooser_view.xml"
     },
@@ -156,6 +160,10 @@
         "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout/notification_template_lines_media.xml"
     },
     {
+        "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/fragment_tweets_list.xml",
+        "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/src/main/res/layout/fragment_tweets_list.xml"
+    },
+    {
         "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
         "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout/abc_screen_simple_overlay_action_mode.xml"
     },
@@ -198,6 +206,10 @@
     {
         "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
         "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/25.2.0/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/toolbar.xml",
+        "source": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/src/main/res/layout/toolbar.xml"
     },
     {
         "merged": "/Users/seonglee/Downloads/codepath/MySimpleTweets/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",

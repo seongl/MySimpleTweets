@@ -1,9 +1,12 @@
 package com.codepath.apps.mysimpletweets.models;
 
+import android.os.Parcelable;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 
@@ -23,7 +26,7 @@ import java.util.ArrayList;
  */
 
 // Parse the JSON + Store the data, encapsulate state logic or display logic
-public class Tweet {
+public class Tweet implements Serializable {
     // list out the attributes
     private String body;
     private long uid; // unique id for the tweet
